@@ -62,10 +62,58 @@ for(i=0;i<itCompanies.length;i++){
 for(i=0;i<itCompanies.length;i++){
   console.log(itCompanies[i].toUpperCase());
 }
-//Q12
+//Q12.
 var str=""
 for(i=0;i<itCompanies.length-2;i++){
   str+=itCompanies[i]+", ";
 }
 str+=itCompanies[itCompanies.length-2]+" and "+itCompanies[itCompanies.length-1]+ " are big IT companies"; 
 console.log(str);
+// Q13.
+if ((itCompanies.includes('Instagram')===true)){
+  console.log('Instagram');
+}
+else{
+  console.log('Company not found');
+}
+//Q14.
+
+for(i=0;i<itCompanies.length;i++){
+  
+}
+// Q15.
+itc=itCompanies.slice(0,itCompanies.length-1);
+itc.sort();
+// Q16.
+itc.reverse();
+// Q17.
+console.log(itc.slice(0,3));
+// Q18.
+console.log(itc.slice(itc.length-3,itc.length));
+// Q19.
+var i1=0;
+var i2=0;
+if(itCompanies.length%2===0){
+  i1=itCompanies.length/2;
+  i2=(itCompanies.length/2)+1;
+  console.log(itCompanies.slice(i1,i2+1));
+}
+else{
+  i1=(itCompanies.length/2)+0.5;
+  console.log(itCompanies.slice(i1,i1+1));
+}
+//Q20.
+console.log(itCompanies.splice(0,1));
+console.log(itCompanies.length);
+//Q21.
+if(itCompanies.length%2===0){
+  i1=itCompanies.length/2;
+  i2=(itCompanies.length/2)+1;
+  console.log(itCompanies.splice(i1,i2+1));
+}
+else{
+  i1=(itCompanies.length/2)+0.5;
+  console.log(itCompanies.splice(i1,i1+1));
+}
+console.log(itCompanies.pop());
+console.log(itCompanies.splice(0));
